@@ -1,12 +1,37 @@
-<style>
-  body { margin: 0; overflow: hidden; background: black; }
-  iframe { 
-    position: absolute; 
-    top: -68px; /* Nasconde il banner di Google */
-    left: 0; 
-    width: 100%; 
-    height: calc(100% + 68px); 
-    border: none; 
-  }
-</style>
-<iframe src="https://script.google.com/macros/s/AKfycbyYbJ90qfN6fGwyINzgyNUGQv_8aMA9-1AANUUWdUCFSVy9hTEZk3s02fcc4zEAgYfl6g/exec"></iframe>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellone Video Wall</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Impedisce lo scorrimento */
+            background-color: black;
+        }
+        .container {
+            position: absolute;
+            top: -68px; /* Sposta l'App Script verso l'alto per nascondere il banner */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 68px); /* Recupera lo spazio rimosso sopra */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- SOSTITUISCI IL LINK QUI SOTTO CON IL TUO LINK /exec -->
+        <iframe src="https://script.google.com/macros/s/AKfycbyYbJ90qfN6fGwyINzgyNUGQv_8aMA9-1AANUUWdUCFSVy9hTEZk3s02fcc4zEAgYfl6g/exec"></iframe>
+    </div>
+</body>
+</html>
+<iframe src="https://script.google.com/macros/s/AKfycbyYbJ90qfN6fGwyINzgyNUGQv_8aMA9-1AANUUWdUCFSVy9hTEZk3s02fcc4zEAgYfl6g/exec"></if
