@@ -10,15 +10,17 @@
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden; /* Impedisce lo scorrimento */
+            overflow: hidden; 
             background-color: black;
         }
         .container {
             position: absolute;
-            top: -68px; /* Sposta l'App Script verso l'alto per nascondere il banner */
+            /* MODIFICATO: -26px è la misura standard della barra Google */
+            top: -26px; 
             left: 0;
             width: 100%;
-            height: calc(100% + 68px); /* Recupera lo spazio rimosso sopra */
+            /* MODIFICATO: Compensa esattamente i 26px tolti */
+            height: calc(100% + 26px); 
         }
         iframe {
             width: 100%;
@@ -29,7 +31,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- SOSTITUISCI IL LINK QUI SOTTO CON IL TUO LINK /exec -->
+        <!-- IL TUO LINK DEL PLAYER -->
         <iframe src="https://script.google.com/macros/s/AKfycbzD-VVGIvBC7vXB7svnToU48MDHPzMQgoFpp_Vvu1BrYaquoEVm17VoEcTLho_7atnR4Q/exec"></iframe>
     </div>
 </body>
