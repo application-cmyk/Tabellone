@@ -15,12 +15,12 @@
         }
         .container {
             position: absolute;
-            /* MODIFICATO: -26px è la misura standard della barra Google */
-            top: -26px; 
+            /* Taglia via la barra di Google */
+            top: -30px; 
             left: 0;
             width: 100%;
-            /* MODIFICATO: Compensa esattamente i 26px tolti */
-            height: calc(100% + 26px); 
+            /* Compensa il taglio + un po' di margine in basso per i cookie */
+            height: calc(100% + 30px); 
         }
         iframe {
             width: 100%;
@@ -31,7 +31,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- IL TUO LINK DEL PLAYER -->
+        <!-- IL TUO LINK -->
         <iframe src="https://script.google.com/macros/s/AKfycbyzk8KIEuDKgoLDenE6b6ZVt_LKCKQZFcAeGJzttGbllfIq3MQfIC7fbKICJUFfkUDl/exec"></iframe>
     </div>
 </body>
